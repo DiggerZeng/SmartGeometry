@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+        <com.sg.main.MainView
+            android:id="@+id/myview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/radiobg_normal"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/undo"
+                    style="@style/radioButton"
+                    android:layout_width="wrap_content"
+                    android:drawableTop="@drawable/undo" />
+
+                <RadioButton
+                    style="@style/radioButton"
+                    android:drawableTop="@drawable/redo"
+                    android:id="@+id/redo"
+                    />
+                <RadioButton
+                    style="@style/radioButton"
+
+                    android:drawableTop="@drawable/clear"
+                    android:id="@+id/clear"
+                    />
+                <RadioButton
+                    style="@style/radioButton"
+
+                    android:drawableTop="@drawable/save"
+                    android:id="@+id/save"
+                    />
+                <RadioButton
+                    style="@style/radioButton"
+
+                    android:drawableTop="@drawable/open"
+                    android:id="@+id/open"
+                    />
+                <RadioButton
+                    style="@style/radioButton"
+
+                    android:drawableTop="@drawable/pen"
+                    android:id="@+id/pen"
+                    />
+                <RadioButton
+                    style="@style/radioButton"
+
+                    android:drawableTop="@drawable/bluetooth"
+                    android:id="@+id/bluetooth"
+                    />
+
+                <RadioButton
+                    android:id="@+id/eraser"
+                    style="@style/radioButton"
+                    android:drawableTop="@drawable/eraser"
+                    />
+
+                <RadioButton
+                    android:id="@+id/color"
+                    style="@style/radioButton"
+                    android:drawableTop="@drawable/color"
+                    />
+
+                <RadioButton
+                    android:id="@+id/help"
+                    style="@style/radioButton"
+                    android:drawableTop="@drawable/help"
+                    />"
+
+            </RadioGroup>
+        </HorizontalScrollView>
+    </RelativeLayout>
+</LinearLayout>
